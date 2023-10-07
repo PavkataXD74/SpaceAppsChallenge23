@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight:100;
+}
+
+.navbar {
+    background-color: #000;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    margin-left: 8rem;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s;
+}
+
+.logo a:hover {
+    opacity: 0.8;
+}
+
+.logo a::before {
+    content: '❤️';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 16px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.logo img {
+    height: 8rem;
+    margin-right: 15px;
+    transition: opacity 0.3s;
+}
+
+.text {
+    margin-right: 8rem;
+}
+
+.navbar span {
+    color: #fff;
+    font-size: 1.75rem;
+    margin-left: 3rem;
+    transition: color 0.3s, cursor 0.3s;
+    cursor: pointer;
+}
+
+.navbar span:hover {
+    color: grey;
+}
+
+.logo a:hover::before {
+    opacity: 0.5;
+}
+    
