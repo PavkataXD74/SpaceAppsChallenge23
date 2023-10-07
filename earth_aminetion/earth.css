@@ -59,6 +59,5 @@ body{
     background-position: center;
     border-radius: 50%;
     position: absolute;
-    top: 30px;
-    animation: rotate_2 5s infinite linear;
+    top: 65px;
 }
