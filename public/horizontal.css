@@ -1,0 +1,264 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+
+#system_horizontal {
+    width: 100%!important;
+    height: 100vh!important;
+    padding: 3rem 0;
+    background-color: black;
+    background-size: cover;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.in_space {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.accurate_image {
+    border-radius: 50%;
+    background-size: 1000px 100%;
+    box-shadow: inset 0px 0px 5px #FDFfF29E,
+                inset 30px 0px 50px black;
+    animation: rotate 10s infinite linear;
+}
+
+
+/* The Sun */
+.sun_horizontal {
+    width: 400rem;
+    height: 400rem;
+    background-image: url("https://images-repo-resized.s3-eu-west-1.amazonaws.com/2020/05/20/f48f469bd71cd046d3e9cb340fb608ce_large.png");
+    transform: translate(-111%,-50%);
+    animation: rotate 40s infinite linear;
+}
+
+.sun_nasa {
+    border-radius: 50%;
+    animation: spin_sun 10s infinite linear;
+}
+
+@keyframes spin_sun {
+    0% {
+        transform: translate(-112.75%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-111%, -50%) rotate(360deg);
+    }
+}
+
+
+/* Mercury */
+.mercury_horizontal {
+    width: 4.15rem;
+    height: 4.15rem;
+    background-image: url("https://astrogeology.usgs.gov/cache/images/3156b31e110813bccb00a415861fe627_Mercury_Messenger_DEM_Global_665m_1024.jpg");
+    transform: translate(-1000%,-50%);
+}
+
+.mercury_nasa {
+    animation: spin_mercury 10s infinite linear;
+}
+
+@keyframes spin_mercury {
+    0% {
+        transform: translate(-1000%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-1000%, -50%) rotate(360deg);
+    }
+}
+
+
+/* Venus */
+.venus_horizontal {
+    width: 10.2rem;
+    height: 10.2rem;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/72/Venus_map_NASA_JPL_Magellan-Venera-Pioneer.jpg");
+    transform: translate(-300%,-50%);
+}
+
+.venus_nasa {
+    animation: spin_venus 10s infinite linear;
+}
+
+@keyframes spin_venus {
+    0% {
+        transform: translate(-300%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-300%, -50%) rotate(360deg);
+    }
+}
+
+
+/* Earth */
+.earth_horizontal {
+    width: 11.04rem;
+    height: 11.04rem;
+    background-image: url("https://www.surfertoday.com/images/stories/physical-world-map.jpg");
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.earth_nasa {
+    animation: spin_earth 10s infinite linear;
+}
+
+@keyframes spin_earth {
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+/* Orbit And Moon */
+.orbit_horizontal {
+    width: 30rem;
+    height: 30rem;
+    border: 1px solid white;    
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    animation: rotate_in_orbit 20s infinite linear;
+}
+
+@keyframes rotate_in_orbit {
+    100% {
+        transform: translate(-50%,-50%)rotate(360deg);
+    }
+}
+
+.moon_horizontal {
+    width: 3rem;
+    height: 3rem;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQrTHjW_J2q9JuYqrqDqCd9Btf00ZmDbHmoQ&usqp=CAU");
+    background-size: 220px;
+    background-position: center;
+    border-radius: 50%;
+    top: 20rem;
+    left: 0;
+}
+
+/* Mars */
+.mars_horizontal {
+    width: 5.52rem;
+    height: 5.52rem;
+    background-image: url("https://jolson615.github.io/solar-system-demo/mars.png");
+    transform: translate(350%,-50%);
+}
+
+.mars_nasa {
+    animation: spin_mars 10s infinite linear;
+}
+
+@keyframes spin_mars {
+    0%{
+        transform: translate(350%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(350%, -50%) rotate(360deg);
+    }
+}
+
+
+/* Jupiter */
+.jupiter_horizontal {
+    width: 40rem;
+    height: 40rem;
+    background-image: url("https://i.pinimg.com/736x/52/eb/a9/52eba9b920d07cf85c8ff6b263a52dd7.jpg");
+    transform: translate(75%,-50%);
+}
+
+.jupiter_nasa {
+    animation: spin_jupiter 10s infinite linear;
+    border-radius: 50%;
+    box-shadow: none;
+}
+
+@keyframes spin_jupiter {
+    0%{
+        transform: translate(75%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(75%, -50%) rotate(360deg);
+    }
+}
+
+
+/* Saturn */
+.saturn_horizontal {
+    width: 33.6rem;
+    height: 33.6rem;
+    background-image: url("https://i.pinimg.com/originals/87/61/4c/87614c592cfb5e9d369fdde536263e2b.jpg");
+    transform: translate(220%,-50%);
+}
+
+.saturn_nasa {
+    animation: spin_saturn 10s infinite linear;
+    box-shadow: none;
+}
+
+
+/* Uranus */
+.uranus_horizontal {
+    width: 14.5rem;
+    height: 14.5rem;
+    background-image: url("https://solarsystemstatsandfacts.weebly.com/uploads/9/3/2/5/93258898/489110822.jpg");
+    transform: translate(775%,-50%);
+}
+
+.uranus_nasa {
+    animation: spin_uranus 10s infinite linear;
+}
+
+@keyframes spin_uranus {
+    0%{
+        transform: translate(775%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(775%, -50%) rotate(360deg);
+    }
+}
+
+
+/* Neptune */
+.neptune_horizontal {
+    width: 14.3rem;
+    height: 14.3rem;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e0763947-6f42-4d09-944f-c2d6f41c415b/dcaifld-8408b286-dfb4-4b94-9d36-029c36cc636f.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UwNzYzOTQ3LTZmNDItNGQwOS05NDRmLWMyZDZmNDFjNDE1YlwvZGNhaWZsZC04NDA4YjI4Ni1kZmI0LTRiOTQtOWQzNi0wMjljMzZjYzYzNmYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.yODnyxRY22JiaqPEBgn28JKMhuisNqchBcC3QQSJO24");
+    transform: translate(910%,-50%);
+}
+
+.neptune_nasa {
+    animation: spin_neptune 10s infinite linear;
+}
+
+@keyframes spin_neptune {
+    0%{
+        transform: translate(910%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(910%, -50%) rotate(360deg);
+    }
+}
+
+/* .in_space:nth-of-type(1) {
+    
+} */
+
+@keyframes rotate {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: 1000px;
+    }
+}

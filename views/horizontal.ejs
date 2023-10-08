@@ -1,0 +1,30 @@
+<div id="system_horizontal">
+    <% console.log(nasaData) %>
+    <% if(nasaData.length) { %>
+        <img src="<%= nasaData[0] %>" class="in_space sun_horizontal sun_nasa">
+    <img src="<%= nasaData[1] %>" class="in_space mercury_horizontal mercury_nasa">
+    <img src="<%= nasaData[2] %>" class="in_space venus_horizontal venus_nasa">
+    <img src="<%= nasaData[3] %>" class="in_space earth_horizontal earth_nasa">
+    <div class="in_space orbit_horizontal">
+        <img src="<%= nasaData[4] %>" class="in_space moon_horizontal">
+    </div>
+    <img src="<%= nasaData[5] %>" class="in_space mars_horizontal mars_nasa">
+    <img src="<%= nasaData[6] %>" class="in_space jupiter_horizontal jupiter_nasa">
+    <img src="<%= nasaData[7] %>" class="in_space saturn_horizontal saturn_nasa">
+    <img src="<%= nasaData[8] %>" class="in_space uranus_horizontal uranus_nasa">
+    <img src="<%= nasaData[9] %>" class="in_space neptune_horizontal neptune_nasa">
+    <% } else { %>
+        <div class="in_space accurate_image sun_horizontal"></div>
+    <div class="in_space accurate_image mercury_horizontal"></div>
+    <div class="in_space accurate_image venus_horizontal"></div>
+    <div class="in_space accurate_image earth_horizontal"></div>
+    <div class="in_space orbit_horizontal">
+        <div class="in_space moon_horizontal"></div>
+    </div>
+    <div class="in_space accurate_image mars_horizontal"></div>
+    <div class="in_space accurate_image jupiter_horizontal"></div>
+    <div class="in_space accurate_image saturn_horizontal"></div>
+    <div class="in_space accurate_image uranus_horizontal"></div>
+    <div class="in_space accurate_image neptune_horizontal"></div>
+    <% } %>
+</div>

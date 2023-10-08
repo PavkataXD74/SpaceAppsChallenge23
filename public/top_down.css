@@ -1,0 +1,188 @@
+:root {
+    --start: 0rad;
+}
+
+#system_top {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+.container_top {
+    font-size: 10px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+}
+
+.sun_top {
+    position: absolute;
+    top: 15em;
+    left: 15em;
+    width: 10em;
+    height: 10em;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 3em white;
+}
+
+.mercury_top, .venus_top, 
+.earth_top, .mars_top, 
+.jupiter_top, .saturn_top, 
+.uranus_top, .neptune_top {
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+
+.mercury_top::before, .venus_top::before,
+.earth_top::before, .mars_top::before,
+.jupiter_top::before, .saturn_top::before,
+.uranus_top::before, .neptune_top::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+.mercury_top {
+    top: 9.8em;
+    left: 9.8em;
+    width: 20em;
+    height: 20em;
+    animation: orbit 8000.8s linear infinite;
+}
+
+.mercury_top::before {
+    top: 2.5em;
+    right: 2.5em;
+    width: 0.8em;
+    height: 0.8em;
+    background-color: red;
+}
+
+.venus_top {
+    top: 7.6em;
+    left: 7.6em;
+    width: 25em;
+    height: 25em;
+    animation: orbit 22.4s linear infinite;
+}
+
+.venus_top::before {
+    top: 3.2em;
+    right: 3.2em;
+    width: 0.8em;
+    height: 0.8em;
+    background-color: orange;
+}
+
+.earth_top {
+    top: 5.4em;
+    left: 5.4em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 36.5s linear infinite;
+}
+
+.earth_top::before {
+    top: 3.9em;
+    right: 3.9em;
+    width: 1em;
+    height: 1em;
+    background-color: yellow;
+}
+
+.mars_top {
+    top: 3.2em;
+    left: 3.2em;
+    width: 35em;
+    height: 35em;
+    animation: orbit 68.6s linear infinite;
+}
+
+.mars_top::before {
+    top: 4.6em;
+    right: 4.6em;
+    width: 1em;
+    height: 1em;
+    background-color: lime;
+}
+
+.jupiter_top {
+    top: -1em;
+    left: -1em;
+    width: 45em;
+    height: 45em;
+    animation: orbit 401.5s linear infinite;
+}
+
+.jupiter_top::before {
+    top: 5.1em;
+    right: 5.1em;
+    width: 3em;
+    height: 3em;
+    background-color: green;
+}
+
+.saturn_top {
+    top: -6em;
+    left: -6em;
+    width: 55em;
+    height: 55em;
+    animation: orbit 1058.5s linear infinite;
+}
+
+.saturn_top::before {
+    top: 6.5em;
+    right: 6.5em;
+    width: 3em;
+    height: 3em;
+    background-color: aqua;
+}
+
+.uranus_top {
+    top: -11em;
+    left: -11em;
+    width: 65em;
+    height: 65em;
+    animation: orbit 3066s linear infinite;
+}
+
+.uranus_top::before {
+    top: 8.5em;
+    right: 8.5em;
+    width: 2em;
+    height: 2em;
+    background-color: blue;
+}
+
+.neptune_top {
+    top: -14.2em;
+    left: -14.2em;
+    width: 71em;
+    height: 71em;
+    animation: orbit 5986s linear infinite;
+}
+
+.neptune_top::before {
+    top: 9.2em;
+    right: 9.2em;
+    width: 2em;
+    height: 2em;
+    background-color: purple;
+}
+
+@keyframes orbit {
+    from {
+        transform: rotate(var(--start));
+    }
+    to {
+        transform: rotate(calc(var(--start) + 2 * (22 / 7)));
+    }
+}
