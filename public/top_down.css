@@ -55,7 +55,7 @@
     left: 9.8em;
     width: 20em;
     height: 20em;
-    animation: orbit 8000.8s linear infinite;
+    animation: orbit 8.8s linear infinite;
 }
 
 .mercury_top::before {
@@ -183,6 +183,6 @@
         transform: rotate(var(--start));
     }
     to {
-        transform: rotate(calc(var(--start) + 2 * (22 / 7)));
+        transform: rotate(calc(var(--start) + 360deg));
     }
 }

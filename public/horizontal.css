@@ -34,8 +34,12 @@
     width: 400rem;
     height: 400rem;
     background-image: url("https://images-repo-resized.s3-eu-west-1.amazonaws.com/2020/05/20/f48f469bd71cd046d3e9cb340fb608ce_large.png");
-    transform: translate(-111%,-50%);
+    transform: translate(-130%,-50%);
     animation: rotate 40s infinite linear;
+}
+
+.sun_not_nasa {
+    transform: translate(-112.8%,-50%);
 }
 
 .sun_nasa {
@@ -127,7 +131,7 @@
     border: 1px solid white;    
     transform: translate(-50%,-50%);
     border-radius: 50%;
-    animation: rotate_in_orbit 20s infinite linear;
+    animation: rotate_in_orbit 40s infinite linear;
 }
 
 @keyframes rotate_in_orbit {
